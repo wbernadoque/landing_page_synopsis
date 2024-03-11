@@ -1,0 +1,19 @@
+.App {
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blackbg);
+  position: relative;
+}
+
+.titleAcc {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  margin: 0 0;
+}
