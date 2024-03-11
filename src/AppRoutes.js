@@ -13,44 +13,14 @@ import Account from "./Pages/Account";
 
 const AppRoutes = () => {
   return (
-    <Router>
+    <Router basename="/landing_page_synopsis">
       <Routes>
-        <Route
-          basename="/landing_page_synopsis"
-          exact
-          path="/"
-          element={<LandingContent />}
-        />
-        <Route
-          basename="/landing_page_synopsis"
-          exact
-          path="/redirection"
-          element={<Redirection />}
-        />
-        <Route
-          basename="/landing_page_synopsis"
-          exact
-          path="/em-breve"
-          element={<Breve />}
-        />
-        <Route
-          basename="/landing_page_synopsis"
-          exact
-          path="/app"
-          element={<DeepLink type={"clube"} />}
-        />
-        <Route
-          basename="/landing_page_synopsis"
-          exact
-          path="/contato"
-          element={<Contato />}
-        />
-        <Route
-          basename="/landing_page_synopsis"
-          exact
-          path="/conta"
-          element={<Account />}
-        />
+        <Route exact path="/" element={<LandingContent />} />
+        <Route exact path="/redirection" element={<Redirection />} />
+        <Route exact path="/em-breve" element={<Breve />} />
+        <Route exact path="/app" element={<DeepLink type={"clube"} />} />
+        <Route exact path="/contato" element={<Contato />} />
+        <Route exact path="/conta" element={<Account />} />
       </Routes>
     </Router>
   );
